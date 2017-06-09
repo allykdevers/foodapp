@@ -10,11 +10,7 @@ $(document).ready(function () {
 
    }
   
-
-
-
-   
-    function getRecipes(searchTerm){
+function getRecipes(searchTerm){
         var params = {
             q:searchTerm,
             r:'json',
