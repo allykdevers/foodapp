@@ -1,4 +1,7 @@
+*{
+	box-sizing: border-box;
 
+}
 h1 {
     text-align: center;
     font-size: 30px;
@@ -27,6 +30,7 @@ p{
 	display: block;
 	float:left;
 	margin: 1% 0 1% 1.6%;
+	text-align; center;
 }
 .col:first-child { margin-left: 0; }
 
