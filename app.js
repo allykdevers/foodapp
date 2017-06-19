@@ -2,19 +2,18 @@ $(document).ready(function () {
 
 
    function showResults (data) {
-        var items= data.items;
-        for(var i = 0; i < items.length; i++) 
-
+        var items= data.recipes;
+        for(var i = 0; i < items.length; i++) {
+ $('.results').append('<div><img src="'+ items[i].image_url+'"><a href="'+items[i].source_url+'">'+items[i].title+'</a></div>')
+        }
    }
   
 function getRecipes(searchTerm){
         var params = {
             q:searchTerm,
-            r:'json',
-            part:,
-            key:'410fed8603e862fd2e7f2a43200896c5',
+            
         },
-        url='http://food2fork.com/api/search';
+        url='http://localhost:3000/food';
 	$.getJSON(url,params,function (data) {
         console.log (data);
 		showResults(data);
