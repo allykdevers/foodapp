@@ -4,7 +4,7 @@ $(document).ready(function () {
    function showResults (data) {
         var items= data.recipes;
         for(var i = 0; i < items.length; i++) {
- $('.results').append('<div><img src="'+ items[i].image_url+'"><a href="'+items[i].source_url+'">'+items[i].title+'</a></div>')
+ $('.results').append('<div class="food"><img class="pic"src="'+ items[i].image_url+'"><a href="'+items[i].source_url+'">'+items[i].title+'</a></div></div>')
         }
    }
   
