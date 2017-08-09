@@ -17,7 +17,7 @@ function getRecipes(searchTerm){
             q:searchTerm,
 
             },
-        url='http://localhost:3000/food';
+        url='https://shielded-taiga-29027.herokuapp.com/food';
 	$.getJSON(url,params,function (data) {
         console.log (data);
 		showResults(data);
